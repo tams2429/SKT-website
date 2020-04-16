@@ -13,7 +13,7 @@ html, body{
 /*-------------- navbar ---------------*/
 
 .nav{
-    background: white;
+    background: blue;
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
