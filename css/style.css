@@ -5,6 +5,7 @@ html, body{
         margin: 0%;
         box-sizing: border-box;
         overflow-x: hidden;
+        background: blue;
 }
 
 
@@ -17,7 +18,13 @@ html, body{
     height: 0rem;
     min-height: 10vh;
     overflow: hidden;
-    
+
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem
+
 }
 
 
