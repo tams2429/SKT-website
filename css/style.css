@@ -4,28 +4,132 @@
 html, body{
         margin: 0%;
         box-sizing: border-box;
-        overflow-x: hidden;
-        background: blue;
+
+
+
+
 }
+
+:root{
+    /*  Theme colors variable */
+    --text-gray: #273043;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* Gradient color variable */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+
+
+    /* Font family variable */
+    --Arial: 'Arial';
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* ----------------Global Classes ------------- */
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* ----------------Global Classes ------------- */
+
+
 
 
 
 /*-------------- navbar ---------------*/
 
 .nav{
-    background: blue;
+    background: white;
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
-    overflow: hidden;
 
 }
 
-.nav .nav-brand a{
+ .nav-menu{
+    justify-content: space-between;
+}
+
+.toggle-collapse div{
+    width: 25px;
+    height: 3px;
+    cursor: pointer;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+
+}
+
+.toggle-collapse{
+    padding: 1rem;
+}
+
+
+
+
+.nav-items{
+    display: flex;
+    margin: 0;
+
+}
+
+.nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Arial);
+}
+
+.nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav-link:hover a{
+    color: var(--white);
+}
+
+.nav-brand a{
     font-size: 1.6rem;
-    padding: 1rem
+    padding: 1rem;
+    display: block;
+    font-family: var(--Arial);
+    font-size: 1.6rem;
+
 
 }
+
+
+
+
+
 
 
 
@@ -34,3 +138,91 @@ html, body{
 
 
 /*-------------- navbar ---------------*/
+
+
+/*    Viewport less than or equal to 750 px  */
+
+@media only screen and (max-width: 800px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+
+    .nav-items{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        pointer-events:none;
+        background-color: var(--midnight);
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);
+        
+    }
+
+    .nav-items li{
+        opacity: 0;
+    }
+
+
+    .toggle-collapse{
+        display: block;
+    }
+
+}
+
+/*------ Toggle classes --------*/
+.nav-active{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+
+}
+
+.navBar-active .toggle-line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.navBar-active .toggle-line2{
+    opacity: 0;
+}
+.navBar-active .toggle-line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*------ Toggle classes --------*/
+
+
+
+/*------- Animations ------------*/
+
+@keyframes navItemsFade{
+    from{
+        opacity: 0;
+        transform: translatex(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+
+
+
+
+
+
+
+/*------- Animations ------------*/
+
+
+
+
+
+
+
+
+
+/*    Viewport less than or equal to 750 px  */
