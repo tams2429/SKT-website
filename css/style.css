@@ -4,11 +4,13 @@
 html, body{
         margin: 0%;
         box-sizing: border-box;
-
-
-
+        scroll-behavior: smooth;
 
 }
+
+
+
+
 
 :root{
     /*  Theme colors variable */
@@ -55,6 +57,34 @@ a{
 ul{
     list-style-type: none;
 }
+
+h1{
+    font-family: Arial;
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: Arial;
+}
+
+h3{
+    font-family: Arial;
+    font-size: 1.3rem;
+}
+
+
+button.btn{
+    font-family: Arial;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+
+}
+
+
+
 
 
 /* ----------------Global Classes ------------- */
@@ -127,17 +157,149 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*-------------- navbar ---------------*/
+
+
+
+
+
+
+/* ------------Main Content ---------------*/
+
+/*---------Site Title ----------*/
+
+main .site-title{
+    background: url('../assets/Notebook.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+.site-background{
+    padding-top: 15rem;
+    color: var(--white);
+    padding-left: 7rem;
+}
+
+.site-background h1, h3{
+    margin: 0.8rem;
+
+}
+
+.site-background .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+.site-background .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+
+}
+
+
+/*---------Site Title ----------*/
+/*---------About Me ------------*/
+.sec1{
+    background: var(--white);
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.sec1 .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.sec1 .content .mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sec1 p{
+    font-family: Arial;
+    padding: 0.8rem;
+    padding-top: 0rem;
+    position: relative;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    
+}
+
+.sec1 h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+
+/*---------About Me ------------*/
+
+
+/*---------My Journey -----------*/
+.sec2 {
+    background: url('../assets/Journey6.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 80vh;
+    padding: 100px;
+}
+
+.sec2 .content{
+    position: relative;
+    text-align: center;
+
+}
+
+.sec2 .content h3{
+    font-size: 40px;
+    font-weight: 200;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------My Journey -----------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------Main Content ---------------*/
+
+
+
 
 
 /*    Viewport less than or equal to 750 px  */
