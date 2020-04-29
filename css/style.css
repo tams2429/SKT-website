@@ -77,7 +77,8 @@ h2{
 
 h3{
     font-family: var(--raleway);
-    font-size: 1.3rem;
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
  
 }
 
@@ -94,6 +95,12 @@ button.btn{
 
 p{
     font-family: var(--raleway);
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: grey;
+    padding: 1.6rem;
+    padding-top: 0;
 }
 
 /* to make paragraph and headings global*/
@@ -132,6 +139,7 @@ p{
     padding: 0 2rem;
     height: 0rem;
     min-height: 10vh;
+    z-index: 3;
 
 }
 
@@ -171,7 +179,7 @@ p{
 }
 
 .nav-link:hover{
-    background-color: var(--midnight);
+    background-color: black;
 }
 
 .nav-link:hover a{
@@ -200,39 +208,68 @@ p{
 
 /*---------Site Title ----------*/
 
-main .site-title{
+/* main .site-title{
     background: url('../assets/nightSky.jpg');
-    background-size: cover; /* add keyframe animation to transition to background-size: cover?*/
+    background-size: cover;
     height: 90vh;
     display: flex;
     justify-content: center;
-}
+} */
 
-.site-background{
+/* .site-background{
     padding-top: 15rem;
     color: var(--white);
     padding-left: 7rem;
+} */
+
+.site-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.site-background h1, h3{
+.site-background .header{
+    z-index: 1;
+    position: relative;
+    top: -20%;
+
+}
+
+.site-background .header h1, h3{
     margin: 0.8rem;
-
+    text-align: center;
 }
 
-.slideTextFromBottom h3{
+.site-background .header h3{
     font-size: 1.3rem;
+    padding-bottom: 0;
 }
 
-.site-background .btn{
+
+.site-background .header .btn{
     margin: 1.8rem;
     background: var(--sky);
+    z-index: 1;
+    position: relative;
+    left: 25%;
 }
 
-.site-background .btn:hover{
+.site-background .header .btn:hover{
     background: transparent;
     border: 1px solid var(--white);
     color: var(--white);
 
+}
+
+.site-background .vidContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 
@@ -267,16 +304,12 @@ main .site-title{
     padding: 0.8rem;
     padding-top: 0rem;
     position: relative;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: grey;
 
     
 }
 
 .sec1 h3{
-    font-size: 40px;
+/*     font-size: 40px; */
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -285,7 +318,7 @@ main .site-title{
 /*---------About Me ------------*/
 
 
-/*---------My Journey -----------*/
+/*---------About Me (IMAGE CAROUSEL) -----------*/
 /* .sec2 {
     background-color: var(--white);
     background-size: cover;
@@ -347,6 +380,7 @@ main .site-title{
 
 .sec1 .galleryContainer .sliderContainer .imageHolder .caption{
     display: none;
+
 }
 
 .sec1 .galleryContainer .sliderContainer .leftArrow{
@@ -423,8 +457,8 @@ main .site-title{
     text-align: center;
     width: 100%;
     background: #00000047;
-    height: 50px;
-    line-height: 50px;
+    height: 90px;
+    line-height: 30px;
     overflow: hidden;
 
 
@@ -433,6 +467,8 @@ main .site-title{
 
 .sec1 .galleryContainer .sliderContainer .captionHolder .captionText{
     margin: 0;
+    color: white;
+    font-size: 18px;
 }
 
 
@@ -539,10 +575,54 @@ main .site-title{
 
 
 
-/*---------My Journey -----------*/
+/*---------About Me (IMAGE CAROUSEL) -----------*/
+
+/*---------Section 2 image divider -------------*/
+.sec2 .divider{
+    background-image: url('../assets/Sky1.jpg');
+    min-height: 200px;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*---------Section 2 image divider -------------*/
+
+
+
+
+
 
 /*---------Why I am applying -------------*/
 
+.sec3{
+    padding: 100px;
+}
+
+
+
+.sec3 .content{
+    text-align: center;
+    width: 100%
+
+}
+
+.sec3 .content p{
+    color: grey;
+    
+}
 
 
 
@@ -571,7 +651,89 @@ main .site-title{
 
 /*---------Why I am applying -------------*/
 
+/*--------------Footer ------------------*/
 
+.sec4 .footerMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 200px;
+    padding: 0%;
+    background-color: lightgray;
+}
+
+.sec4 .footerMain .footerHeader{
+    color: black;
+    text-align: center;
+}
+
+
+.sec4 .footerMain .footerHeader h3{
+    font-size: 1.8rem;
+    padding: 0;
+}
+
+
+.sec4 .footerMain .footerHeader p{
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+
+
+
+.sec4 .footerMain .footerIcons{
+    width: 100px;
+
+
+}
+
+.sec4 .footerMain .footerIcons ul{
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flow-direction: row;
+    position: absolute;
+    left: 43%;
+    text-align: center;
+}
+
+
+
+
+.sec4 .footerMain .footerIcons ul li a img{
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------Footer ------------------*/
 
 
 
@@ -606,9 +768,9 @@ main .site-title{
 
 
 
-/*    Viewport less than or equal to 750 px  */
+/*    Viewport less than or equal to 850 px  */
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 850px){
 
     body{
         overflow-x: hidden;
@@ -618,25 +780,51 @@ main .site-title{
     .nav-items{
         position: absolute;
         right: 0px;
-        height: 92vh;
+        height: 90vh;
         top: 8vh;
         pointer-events:none;
-        background-color: var(--bg-color);
+        background-color: white;
         flex-direction: column;
         align-items: center;
-        width: 60%;
+        width: 40%;
         transform: translateX(100%);
+        z-index: 2;
+        padding: 0;
+        border-radius: 10px;
         
     }
 
+
     .nav-items li{
         opacity: 0;
+        font-size: 1.2rem;
+        font-family: var(--raleway);
+        color: white;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2.3rem;
     }
+
 
 
     .toggle-collapse{
         display: block;
     }
+
+    .sec1 .galleryContainer .sliderContainer .captionHolder{
+        height: 100px;
+        line-height: 30px;
+        overflow: hidden;
+    
+    }
+
+    .sec1 .galleryContainer .sliderContainer .captionHolder .captionText{
+        font-size: 16px;
+    }
+
+
+
+
 
 }
 
