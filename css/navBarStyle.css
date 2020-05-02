@@ -65,24 +65,7 @@
 /*-------------- navbar  END---------------*/
 
 
-/*------ Toggle classes --------*/
-.nav-active{
-    transform: translateX(0%);
-    transition: transform 0.5s ease-in;
 
-}
-
-.navBar-active .toggle-line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.navBar-active .toggle-line2{
-    opacity: 0;
-}
-.navBar-active .toggle-line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-/*------ Toggle classes  END--------*/
 
 
 
@@ -128,6 +111,28 @@
         display: block;
     }
 }
+
+
+/*------ Toggle classes --------*/
+.nav-active{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+
+}
+
+.navBar-active .toggle-line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.navBar-active .toggle-line2{
+    opacity: 0;
+}
+.navBar-active .toggle-line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*------ Toggle classes  END--------*/
+
+
 
 
 
