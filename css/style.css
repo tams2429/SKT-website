@@ -18,12 +18,10 @@ html, body{
     --text-light: #686666da;
     --bg-color: #0f0f0f;
     --white: #ffffff;
-    --midnight: #104f55;
 
     /* Gradient color variable */
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
-    --greygrad: linear-gradient(to right, #2c3e50, #bdc3c7); 
-    --spacegrad: linear-gradient(to right, #434343, #000000);
+
 
     /* Google font families */
     --ubuntu: 'Ubuntu', sans-serif;
@@ -32,15 +30,8 @@ html, body{
     --poppins: 'Poppins', sans-serif;
 
 
-
-
     /* Font family variable */
     --Arial: 'Arial';
-
-
-
-
-
 
 }
 
@@ -56,11 +47,6 @@ a{
     color: var(--text-gray);
 }
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
-
-}
 
 ul{
     list-style-type: none;
@@ -68,65 +54,33 @@ ul{
 
 h1{
     font-family: var(--raleway);
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
-h2{
-    font-family: var(--raleway);
-}
 
 h3{
     font-family: var(--raleway);
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     padding-bottom: 1rem;
  
 }
 
 
-button.btn{
-    font-family: var(--raleway);
-    font-size: 0.9rem;
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem 3rem;
-    cursor: pointer;
 
-}
 
 p{
     font-family: var(--raleway);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    letter-spacing: 1px;
-    color: grey;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    color: #61676D;
     padding: 1.6rem;
     padding-top: 0;
 }
 
-/* to make paragraph and headings global*/
 
-/* .sec1 p{                 
-    padding: 0.8rem;
-    padding-top: 0rem;
-    position: relative;
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-    color: grey;
-
-    
-}
-
-.sec1 h3{
-    font-size: 40px;
-    font-weight: 200;
-    margin-bottom: 10px;
-} */
-
-
-
-
-/* ----------------Global Classes ------------- */
+/* -------------Global Classes   END------------- */
 
 
 
@@ -140,11 +94,15 @@ p{
     height: 0rem;
     min-height: 10vh;
     z-index: 3;
+    position: sticky;
+    top: 0;
 
 }
 
  .nav-menu{
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
 
 .toggle-collapse div{
@@ -155,13 +113,11 @@ p{
     margin: 5px;
     transition: all 0.3s ease;
 
-
 }
 
 .toggle-collapse{
-    padding: 1rem;
+    padding: 1.3rem;
 }
-
 
 
 
@@ -172,10 +128,10 @@ p{
 }
 
 .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
+    padding: 1.6rem 1.8rem;
+    font-size: 1.3rem;
     position: relative;
-    font-family: var(--Arial);
+    font-family: var(--raleway);
 }
 
 .nav-link:hover{
@@ -188,16 +144,13 @@ p{
 
 .nav-brand a{
     font-size: 1.6rem;
-    padding: 1rem;
+    padding: 1.6rem;
     display: block;
-    font-family: var(--Arial);
-    font-size: 1.6rem;
-
-
+    font-family: var(--raleway);
 }
 
 
-/*-------------- navbar ---------------*/
+/*-------------- navbar  END---------------*/
 
 
 
@@ -208,19 +161,6 @@ p{
 
 /*---------Site Title ----------*/
 
-/* main .site-title{
-    background: url('../assets/nightSky.jpg');
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-} */
-
-/* .site-background{
-    padding-top: 15rem;
-    color: var(--white);
-    padding-left: 7rem;
-} */
 
 .site-background{
     position: relative;
@@ -236,6 +176,8 @@ p{
     z-index: 1;
     position: relative;
     top: -20%;
+    animation: titleAppear;
+    animation-duration: 10s;
 
 }
 
@@ -250,7 +192,13 @@ p{
 }
 
 
-.site-background .header .btn{
+.btn{
+    font-family: var(--raleway);
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
     margin: 1.8rem;
     background: var(--sky);
     z-index: 1;
@@ -258,10 +206,11 @@ p{
     left: 25%;
 }
 
+
 .site-background .header .btn:hover{
     background: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
+    border: 1px solid green;
+    color: green;
 
 }
 
@@ -272,19 +221,23 @@ p{
     width: 100%;
 }
 
+/*---------Site Title  END ----------*/
 
-/*---------Site Title ----------*/
+
+
+
+
+
 /*---------About Me ------------*/
 .sec1{
-    /* background: url('../assets/Journey1.jpg'); */
     background-color: var(--white);
     padding: 100px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    background-size: cover;
+/*     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     flex-direction: column;
 
 }
@@ -295,7 +248,7 @@ p{
     width: 100%;
 }
 
-.sec1 .content .mxw800p{
+.sec1 .content .aboutMe{
     max-width: 800px;
     margin: 0 auto;
 }
@@ -309,35 +262,19 @@ p{
 }
 
 .sec1 h3{
-/*     font-size: 40px; */
     font-weight: 200;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    margin-top: 0;
 }
 
 
-/*---------About Me ------------*/
+/*---------About Me  END------------*/
+
+
 
 
 /*---------About Me (IMAGE CAROUSEL) -----------*/
-/* .sec2 {
-    background-color: var(--white);
-    background-size: cover;
-    height: 80vh;
-    padding: 100px;
-}
 
-.sec2 .content{
-    position: relative;
-    text-align: center;
-
-}
-
-.sec2 .content h3{
-    font-size: 40px;
-    font-weight: 200;
-    color: black
-
-} */
 
 .sec1 .galleryContainer{
     width: 80%;
@@ -378,10 +315,11 @@ p{
 ̉
 }
 
-.sec1 .galleryContainer .sliderContainer .imageHolder .caption{
-    display: none;
-
+.sec1 .galleryContainer .sliderContainer .captionHolder p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
+
 
 .sec1 .galleryContainer .sliderContainer .leftArrow{
     width: 50px;
@@ -571,15 +509,14 @@ p{
 
 }
 
+/*---------About Me (IMAGE CAROUSEL)  END-----------*/
 
 
 
-
-/*---------About Me (IMAGE CAROUSEL) -----------*/
 
 /*---------Section 2 image divider -------------*/
 .sec2 .divider{
-    background-image: url('../assets/Sky1.jpg');
+    background-image: url('../assets/sky1.jpg');
     min-height: 200px;
     position: relative;
     opacity: 0.70;
@@ -588,17 +525,7 @@ p{
     background-attachment: fixed;
 }
 
-
-
-
-
-
-
-
-
-
-
-/*---------Section 2 image divider -------------*/
+/*---------Section 2 image divider  END-------------*/
 
 
 
@@ -608,9 +535,10 @@ p{
 /*---------Why I am applying -------------*/
 
 .sec3{
-    padding: 100px;
+    padding: 200px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-
 
 
 .sec3 .content{
@@ -624,32 +552,15 @@ p{
     
 }
 
+.sec3 .content h3{
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/*---------Why I am applying  END-------------*/
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------Why I am applying -------------*/
 
 /*--------------Footer ------------------*/
 
@@ -670,21 +581,26 @@ p{
 
 
 .sec4 .footerMain .footerHeader h3{
-    font-size: 1.8rem;
-    padding: 0;
-}
-
-
-.sec4 .footerMain .footerHeader p{
     font-size: 1.5rem;
     padding: 0;
 }
 
 
+.sec4 .footerMain .footerHeader p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bg-color);
+    padding: 0;
+    letter-spacing: 0;
+    margin-block-start: 0;
+    
+}
 
 
 .sec4 .footerMain .footerIcons{
-    width: 100px;
+    height: 60px;
+    display: flex;
+    
 
 
 }
@@ -693,76 +609,35 @@ p{
     width: 20px;
     padding: 0;
     margin: 0;
-    display: flex;
-    flow-direction: row;
-    position: absolute;
-    left: 43%;
+    justify-content: center;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+
+    
 }
-
-
 
 
 .sec4 .footerMain .footerIcons ul li a img{
     width: 40px;
     height: 40px;
+    margin-right: 20px;
+
+
 }
 
+/*--------------Footer  END ------------------*/
 
 
 
 
+/* ------------Main Content   END---------------*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------Footer ------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------Main Content ---------------*/
 
 
 
@@ -782,7 +657,6 @@ p{
         right: 0px;
         height: 90vh;
         top: 8vh;
-        pointer-events:none;
         background-color: white;
         flex-direction: column;
         align-items: center;
@@ -805,6 +679,9 @@ p{
         padding: 2.3rem;
     }
 
+    .nav-items .nav-link:hover{
+        background-color: grey;
+    }
 
 
     .toggle-collapse{
@@ -823,10 +700,9 @@ p{
     }
 
 
-
-
-
 }
+
+
 
 /*------ Toggle classes --------*/
 .nav-active{
@@ -845,7 +721,7 @@ p{
     transform: rotate(45deg) translate(-5px,-6px);
 }
 
-/*------ Toggle classes --------*/
+/*------ Toggle classes  END--------*/
 
 
 
@@ -931,23 +807,29 @@ p{
     }
 }
 
+@keyframes titleAppear{
+    0%{
+        opacity: 0;
+        left: -100px;
+        color: white
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+        color: black
+    }
+}
 
 
 
 
 
-
-
-
-
-/*------- Animations ------------*/
-
+/*------- Animations  END------------*/
 
 
 
 
 
-
-
-
-/*    Viewport less than or equal to 750 px  */
