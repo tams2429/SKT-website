@@ -1,0 +1,150 @@
+/*-------------- navbar ---------------*/
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+
+}
+
+ .nav-menu{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.toggle-collapse div{
+    width: 25px;
+    height: 3px;
+    cursor: pointer;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+
+.toggle-collapse{
+    padding: 1.3rem;
+}
+
+
+
+.nav-items{
+    display: flex;
+    margin: 0;
+
+}
+
+.nav-link{
+    padding: 1.6rem 1.8rem;
+    font-size: 1.3rem;
+    position: relative;
+    font-family: var(--raleway);
+}
+
+.nav-link:hover{
+    background-color: black;
+}
+
+.nav-link:hover a{
+    color: var(--white);
+}
+
+.nav-brand a{
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    display: block;
+    font-family: var(--raleway);
+}
+
+
+/*-------------- navbar  END---------------*/
+
+
+/*------ Toggle classes --------*/
+.nav-active{
+    transform: translateX(0%);
+    transition: transform 0.5s ease-in;
+
+}
+
+.navBar-active .toggle-line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.navBar-active .toggle-line2{
+    opacity: 0;
+}
+.navBar-active .toggle-line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/*------ Toggle classes  END--------*/
+
+
+
+
+/*    Viewport less than or equal to 850 px  */
+
+
+@media only screen and (max-width: 850px){
+
+    .nav-items{
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: 8vh;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        z-index: 2;
+        padding: 0;
+        border-radius: 10px;
+        
+    }
+
+
+    .nav-items li{
+        opacity: 0;
+        font-size: 1.2rem;
+        font-family: var(--raleway);
+        color: white;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 2.3rem;
+    }
+
+    .nav-items .nav-link:hover{
+        background-color: grey;
+    }
+
+
+    .toggle-collapse{
+        display: block;
+    }
+}
+
+
+
+/*------- Animations ------------*/
+
+@keyframes navItemsFade{
+    from{
+        opacity: 0;
+        transform: translatex(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translatex(0px);
+    }
+}
+
+
+
+
+/*------- Animations  END------------*/

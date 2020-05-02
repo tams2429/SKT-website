@@ -1,0 +1,14 @@
+/*---------Section 2 image divider -------------*/
+
+
+.sec2 .divider{
+    background-image: url('../assets/sky1.jpg');
+    min-height: 200px;
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*---------Section 2 image divider  END-------------*/

@@ -1,0 +1,85 @@
+/*---------Site Title ----------*/
+
+
+.site-background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.site-background .header{
+    z-index: 1;
+    position: relative;
+    top: -20%;
+    animation: titleAppear;
+    animation-duration: 10s;
+
+}
+
+.site-background .header h1, h3{
+    margin: 0.8rem;
+    text-align: center;
+}
+
+.site-background .header h3{
+    font-size: 1.3rem;
+    padding-bottom: 0;
+}
+
+
+.btn{
+    font-family: var(--raleway);
+    font-size: 1rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    margin: 1.8rem;
+    background: var(--sky);
+    z-index: 1;
+    position: relative;
+    left: 25%;
+}
+
+
+.site-background .header .btn:hover{
+    background: transparent;
+    border: 1px solid green;
+    color: green;
+
+}
+
+.site-background .vidContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*---------Site Title  END ----------*/
+
+
+
+/*------- Animations ------------*/
+
+@keyframes titleAppear{
+    0%{
+        opacity: 0;
+        left: -100px;
+        color: white
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 0px;
+        color: black
+    }
+}
+
+/*------- Animations  END------------*/

@@ -1,0 +1,61 @@
+/*--------------Footer ------------------*/
+
+.sec4 .footerMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 200px;
+    padding: 0%;
+    background-color: lightgray;
+}
+
+.sec4 .footerMain .footerHeader{
+    color: black;
+    text-align: center;
+}
+
+
+.sec4 .footerMain .footerHeader h3{
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+
+.sec4 .footerMain .footerHeader p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--bg-color);
+    padding: 0;
+    letter-spacing: 0;
+    margin-block-start: 0;
+    
+}
+
+
+.sec4 .footerMain .footerIcons{
+    height: 60px;
+    display: flex;
+
+}
+
+.sec4 .footerMain .footerIcons ul{
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.sec4 .footerMain .footerIcons ul li a img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+/*--------------Footer  END ------------------*/

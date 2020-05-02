@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro|Poppins|Raleway|Ubuntu&display=swap');
+
+html, body{
+        margin: 0%;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+
+}
+
+
+
+
+
+:root{
+    /*  Theme colors variable */
+    --text-gray: #273043;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+
+    /* Gradient color variable */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+
+    /* Google font families */
+    --ubuntu: 'Ubuntu', sans-serif;
+    --maven: 'Maven Pro', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+
+
+    /* Font family variable */
+    --Arial: 'Arial';
+
+}
+
+
+
+
+/* ----------------Global Classes ------------- */
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--raleway);
+    font-size: 2.8rem;
+}
+
+
+h3{
+    font-family: var(--raleway);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+ 
+}
+
+
+
+p{
+    font-family: var(--raleway);
+    font-size: 1.2rem;
+    font-weight: 300;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    color: grey;
+    padding: 1.6rem;
+    padding-top: 0;
+}
+
+
+/* -------------Global Classes   END------------- */
+
+
+
+/*    Viewport less than or equal to 850 px  */
+
+@media only screen and (max-width: 850px){
+
+    body{
+        overflow-x: hidden;
+    }
+}
