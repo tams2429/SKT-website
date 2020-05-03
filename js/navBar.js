@@ -3,8 +3,6 @@ const navSlide = () => {
     const navItems = document.querySelector('.nav-items');
     const navLinks = document.querySelectorAll('.nav-items .nav-link');
 
-
-
     navBar.addEventListener('click', () => {
         
         //Toggle Nav        
@@ -19,15 +17,9 @@ const navSlide = () => {
             }
         });
 
-
         //Navbar animation
         navBar.classList.toggle('navBar-active');
     })
-
-
-
-
-
 }
 
 navSlide();
