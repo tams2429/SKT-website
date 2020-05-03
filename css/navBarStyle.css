@@ -8,7 +8,6 @@
     z-index: 3;
     position: sticky;
     top: 0;
-
 }
 
  .nav-menu{
@@ -20,21 +19,20 @@
 .nav-items{
     display: flex;
     margin: 0;
-
 }
 
-.nav-link{
-    padding: 1.6rem 1.8rem;
+.nav-items .nav-link{
+    padding: 1.7rem 1.8rem;
     font-size: 1.3rem;
     position: relative;
     font-family: var(--raleway);
 }
 
-.nav-link:hover{
+.nav-items a:hover{
     background-color: black;
 }
 
-.nav-link:hover a{
+.nav-items a:hover{
     color: var(--white);
 }
 
@@ -56,7 +54,6 @@
     background-color: black;
     margin: 0.31rem;
     transition: all 0.3s ease;
-
 }
 
 
@@ -111,7 +108,7 @@
         border-radius: 0.63rem;
     }
 
-    .nav-items li{
+    .nav-items a{
         opacity: 0;
         font-size: 1.2rem;
         font-family: var(--raleway);
@@ -121,7 +118,7 @@
         padding: 2.3rem;
     }
 
-    .nav-items .nav-link:hover{
+    .nav-items a:hover{
         background-color: grey;
     }
 
