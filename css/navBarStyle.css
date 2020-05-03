@@ -3,7 +3,7 @@
 .nav{
     background: white;
     padding: 0 2rem;
-    height: 0rem;
+    height: 0;
     min-height: 10vh;
     z-index: 3;
     position: sticky;
@@ -16,22 +16,6 @@
     display: flex;
     flex-direction: row;
 }
-
-.toggle-collapse div{
-    width: 25px;
-    height: 3px;
-    cursor: pointer;
-    background-color: black;
-    margin: 5px;
-    transition: all 0.3s ease;
-
-}
-
-.toggle-collapse{
-    padding: 1.3rem;
-}
-
-
 
 .nav-items{
     display: flex;
@@ -61,6 +45,20 @@
     font-family: var(--raleway);
 }
 
+.toggle-collapse{
+    padding: 1.3rem;
+}
+
+.toggle-collapse div{
+    width: 1.6rem;
+    height: 0.19rem;
+    cursor: pointer;
+    background-color: black;
+    margin: 0.31rem;
+    transition: all 0.3s ease;
+
+}
+
 
 /*-------------- navbar  END---------------*/
 
@@ -68,16 +66,39 @@
 
 
 
+/*    Viewport less than or equal to 1050 px  */
+
+@media only screen and (max-width: 1050px){
+    .nav-link{
+        padding: 1.8rem 0.9rem;
+        font-size: 1.2rem;
+        position: relative;
+        font-family: var(--raleway);
+    }
+
+    .nav-brand a{
+        font-size: 1.4rem;
+        padding: 0.9rem;
+        padding-top: 1.5rem;
+        display: block;
+        font-family: var(--raleway);
+    }
+}
 
 
-/*    Viewport less than or equal to 850 px  */
 
 
-@media only screen and (max-width: 850px){
+
+
+
+/*    Viewport less than or equal to 870 px  */
+
+
+@media only screen and (max-width: 870px){
 
     .nav-items{
         position: absolute;
-        right: 0px;
+        right: 0;
         height: 90vh;
         top: 8vh;
         background-color: white;
@@ -87,10 +108,8 @@
         transform: translateX(100%);
         z-index: 2;
         padding: 0;
-        border-radius: 10px;
-        
+        border-radius: 0.63rem;
     }
-
 
     .nav-items li{
         opacity: 0;
@@ -106,7 +125,6 @@
         background-color: grey;
     }
 
-
     .toggle-collapse{
         display: block;
     }
@@ -115,24 +133,23 @@
 
 /*------ Toggle classes --------*/
 .nav-active{
-    transform: translateX(0%);
+    transform: translateX(0);
     transition: transform 0.5s ease-in;
-
 }
 
 .navBar-active .toggle-line1{
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-0.31rem,0.38rem);
 }
+
 .navBar-active .toggle-line2{
     opacity: 0;
 }
+
 .navBar-active .toggle-line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(45deg) translate(-0.31rem,-0.38rem);
 }
 
 /*------ Toggle classes  END--------*/
-
-
 
 
 
@@ -141,15 +158,12 @@
 @keyframes navItemsFade{
     from{
         opacity: 0;
-        transform: translatex(50px);
+        transform: translatex(3.1rem);
     }
     to{
         opacity: 1;
-        transform: translatex(0px);
+        transform: translatex(0);
     }
 }
-
-
-
 
 /*------- Animations  END------------*/

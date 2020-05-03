@@ -5,8 +5,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    min-height: 200px;
-    padding: 0%;
+    min-height: 13rem;
+    padding: 0;
     background-color: lightgray;
 }
 
@@ -29,33 +29,28 @@
     padding: 0;
     letter-spacing: 0;
     margin-block-start: 0;
-    
 }
 
 
 .sec4 .footerMain .footerIcons{
-    height: 60px;
-    display: flex;
-
+    height: 3.8rem;
 }
 
 .sec4 .footerMain .footerIcons ul{
-    width: 20px;
+    width: 1.3rem;
     padding: 0;
     margin: 0;
     justify-content: center;
-    text-align: center;
     display: flex;
-    flex-direction: row;
     margin-right: auto;
     margin-left: auto;
 }
 
 
 .sec4 .footerMain .footerIcons ul li a img{
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.3rem;
 }
 
 /*--------------Footer  END ------------------*/

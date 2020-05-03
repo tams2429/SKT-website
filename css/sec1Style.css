@@ -1,11 +1,10 @@
 /*---------About Me ------------*/
 .sec1{
-    padding: 100px;
+    padding: 6.3rem;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
 }
 
 .sec1 .content{
@@ -15,44 +14,34 @@
 }
 
 .sec1 .content .aboutMe{
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
 }
 
 .sec1 p{
-    padding: 0.8rem;
-    padding-top: 0rem;
     position: relative;
-
-    
 }
 
 .sec1 h3{
     font-weight: 200;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     margin-top: 0;
 }
 
 
 /*---------About Me  END------------*/
 
-
-
-
 /*---------About Me (IMAGE CAROUSEL) -----------*/
 
 
 .sec1 .galleryContainer{
     width: 80%;
-    height: 500px;
-    max-width:1000px;
+    height: 31rem;
+    max-width: 62rem;
     user-select: none;
-    padding: 10px;
+    padding: 0.62rem;
     box-sizing: border-box;
     margin: 0 auto;
-
-
-
 }
 
 .sec1 .galleryContainer .sliderContainer{
@@ -61,45 +50,40 @@
     overflow: hidden;
     background-color: gainsboro;
     position: relative;
-
-
 }
 
 .sec1 .galleryContainer .sliderContainer .imageHolder{
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: 0;
-
- 
+    opacity: 0; 
 }
 
 .sec1 .galleryContainer .sliderContainer .imageHolder img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-̉
+    opacity: 0.7;
 }
 
 .sec1 .galleryContainer .sliderContainer .captionHolder p{
     font-size: 1.1rem;
-    letter-spacing: 1px;
+    letter-spacing: 0.063rem;
 }
 
 
 .sec1 .galleryContainer .sliderContainer .leftArrow{
-    width: 50px;
+    width: 3.1rem;
     background: #00000036;
     position: absolute;
     left: 0;
     z-index: 1;
     transition: background 0.5s;
-    height: 72px;
+    height: 4.5rem;
     top: 50%;
     transform: translateY(-50%);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-
+    border-top-left-radius: 0.63rem;
+    border-bottom-left-radius: 0.63rem;
 }
 
 .sec1 .galleryContainer .sliderContainer .leftArrow:hover{
@@ -108,17 +92,17 @@
 }
 
 .sec1 .galleryContainer .sliderContainer .rightArrow{
-    width: 50px;
+    width: 3.1rem;
     background: #00000036;
     position: absolute;
     right: 0;
     z-index: 1;
     transition: background 0.5s;
-    height: 72px;
+    height: 4.5rem;
     top: 50%;
     transform: translateY(-50%);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0.63rem;
+    border-bottom-right-radius: 0.63rem;
 }
 
 .sec1 .galleryContainer .sliderContainer .rightArrow:hover{
@@ -128,9 +112,9 @@
 
 .sec1 .galleryContainer .sliderContainer .arrow{
     display: inline-block;
-    border: 3px solid var(--white);
-    width: 10px;
-    height: 10px;
+    border: 0.19rem solid var(--white);
+    width: 0.63rem;
+    height: 0.63rem;
     border-left: none;
     border-bottom: none;
     margin: auto;
@@ -160,24 +144,24 @@
     text-align: center;
     width: 100%;
     background: #00000047;
-    height: 90px;
-    line-height: 30px;
+    height: 5.6rem;
+    line-height: 1.9rem;
     overflow: hidden;
 }
 
 .sec1 .galleryContainer .sliderContainer .captionHolder .captionText{
     margin: 0;
     color: white;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 
 .sec1 .galleryContainer .sliderContainer #playPauseBtn{
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     position: absolute;
     z-index: 5;
-    margin: 5px;
+    margin: 0.31rem;
     cursor: pointer;
     background-image: url('../icons/playPause.png');
     background-repeat: no-repeat;
@@ -189,36 +173,29 @@
     width: 100%;
     height: 10%;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 1.2rem;
     box-sizing: border-box;
-
 }
 
 
 .sec1 .galleryContainer #dotsContainer .dots{
     display: inline-block;
-    width: 15px;
-    height: 14px;
+    width: 0.94rem;
+    height: 0.88rem;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 0.63rem;
     background-color: #bbb;
     cursor: pointer;
     transition: background-color 0.5s;
-
-
 }
 
 .sec1 .galleryContainer #dotsContainer .dots:first-child{
     margin-left: 0;
-
 }
-
 
 .sec1 .galleryContainer #dotsContainer .dots:hover{
     background-color: #717171;
-
 }
-
 
 .sec1 .galleryContainer #dotsContainer .dots.active{
     background-color: #717171;
@@ -229,7 +206,6 @@
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-
 }
 
 .sec1 .galleryContainer .moveLeftNextSlide{
@@ -237,7 +213,6 @@
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-
 }
 
 .sec1 .galleryContainer .moveRightCurrentSlide{
@@ -245,7 +220,6 @@
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-
 }
 
 .sec1 .galleryContainer .moveRightNextSlide{
@@ -253,21 +227,18 @@
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-
 }
 
 .slideTextFromBottom{
     animation-name: slideTextFromBottom;
     animation-duration: 0.7s;
     animation-timing-function: ease-out;
-
 }
 
 .slideTextFromTop{
     animation-name: slideTextFromTop;
     animation-duration: 0.7s;
     animation-timing-function: ease-out;
-
 }
 
 /*---------About Me (IMAGE CAROUSEL)  END-----------*/
@@ -280,20 +251,15 @@
 
 @media only screen and (max-width: 850px){
     .sec1 .galleryContainer .sliderContainer .captionHolder{
-        height: 100px;
-        line-height: 30px;
+        height: 6.3rem;
+        line-height: 1.9rem;
         overflow: hidden;
-    
     }
 
     .sec1 .galleryContainer .sliderContainer .captionHolder .captionText{
-        font-size: 16px;
+        font-size: 1rem;
     }
-
-
 }
-
-
 
 
 /*------- Animations ------------*/
@@ -316,7 +282,7 @@
         opacity: 1;
     }
     to{
-        margin-left: 0%;
+        margin-left: 0;
         opacity: 1;
     }
 }
@@ -338,7 +304,7 @@
         opacity: 1;
     }
     to{
-        margin-left: 0%;
+        margin-left: 0;
         opacity: 1;
     }
 }
@@ -346,7 +312,7 @@
 @keyframes slideTextFromBottom {
     from{
         opacity: 0;
-        margin-top: 100px;
+        margin-top: 6.3rem;
     }
     to{
         opacity: 1;
@@ -358,12 +324,11 @@
 @keyframes slideTextFromTop {
     from{
         opacity: 0;
-        margin-top: -100px;
+        margin-top: -6.3rem;
     }
     to{
         opacity: 1;
         margin-top: 0;
-
     }
 }
 

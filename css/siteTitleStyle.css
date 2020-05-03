@@ -1,6 +1,4 @@
 /*---------Site Title ----------*/
-
-
 .site-background{
     position: relative;
     width: 100%;
@@ -17,7 +15,6 @@
     top: -20%;
     animation: titleAppear;
     animation-duration: 10s;
-
 }
 
 .site-background .header h1, h3{
@@ -29,7 +26,6 @@
     font-size: 1.3rem;
     padding-bottom: 0;
 }
-
 
 .btn{
     font-family: var(--raleway);
@@ -45,12 +41,10 @@
     left: 25%;
 }
 
-
 .site-background .header .btn:hover{
     background: transparent;
-    border: 1px solid green;
+    border: 0.063rem solid green;
     color: green;
-
 }
 
 .site-background .vidContainer{
@@ -62,14 +56,12 @@
 
 /*---------Site Title  END ----------*/
 
-
-
 /*------- Animations ------------*/
 
 @keyframes titleAppear{
     0%{
         opacity: 0;
-        left: -100px;
+        left: -6.3rem;
         color: white
     }
     70%{
@@ -77,7 +69,7 @@
     }
     100%{
         opacity: 1;
-        left: 0px;
+        left: 0;
         color: black
     }
 }

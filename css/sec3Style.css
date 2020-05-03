@@ -1,22 +1,22 @@
 /*---------Why I am applying -------------*/
 
 .sec3{
-    padding: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 6.25rem;
+
 }
 
 
 .sec3 .content{
     text-align: center;
-    width: 100%
-
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 
 .sec3 .content h3{
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 /*---------Why I am applying  END-------------*/
