@@ -66,7 +66,7 @@
 /*    Viewport less than or equal to 1050 px  */
 
 @media only screen and (max-width: 1050px){
-    .nav-link{
+    .nav-items .nav-link {
         padding: 1.8rem 0.9rem;
         font-size: 1.2rem;
         position: relative;
@@ -92,6 +92,9 @@
 
 
 @media only screen and (max-width: 870px){
+    .nav-link{
+        width: 60%;
+    }
 
     .nav-items{
         position: absolute;
@@ -108,14 +111,14 @@
         border-radius: 0.63rem;
     }
 
-    .nav-items a{
+    .nav-items .nav-link{
         opacity: 0;
         font-size: 1.2rem;
         font-family: var(--raleway);
-        color: white;
+        color: black;
         flex-wrap: wrap;
         text-align: center;
-        padding: 2.3rem;
+        padding: 3rem;
     }
 
     .nav-items a:hover{
@@ -125,28 +128,30 @@
     .toggle-collapse{
         display: block;
     }
+
+    /*------ Toggle classes --------*/
+    .nav-active{
+        transform: translateX(0);
+        transition: transform 0.5s ease-in;
+    }
+
+    .navBar-active .toggle-line1{
+        transform: rotate(-45deg) translate(-0.31rem,0.38rem);
+    }
+
+    .navBar-active .toggle-line2{
+        opacity: 0;
+    }
+
+    .navBar-active .toggle-line3{
+        transform: rotate(45deg) translate(-0.31rem,-0.38rem);
+    }
+
+    /*------ Toggle classes  END--------*/
 }
 
 
-/*------ Toggle classes --------*/
-.nav-active{
-    transform: translateX(0);
-    transition: transform 0.5s ease-in;
-}
 
-.navBar-active .toggle-line1{
-    transform: rotate(-45deg) translate(-0.31rem,0.38rem);
-}
-
-.navBar-active .toggle-line2{
-    opacity: 0;
-}
-
-.navBar-active .toggle-line3{
-    transform: rotate(45deg) translate(-0.31rem,-0.38rem);
-}
-
-/*------ Toggle classes  END--------*/
 
 
 
